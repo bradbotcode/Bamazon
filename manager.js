@@ -62,7 +62,6 @@ function viewProd() {
 function viewLow() {
     connection.query("SELECT * FROM products WHERE stock_quantity < 5", function (err, res) {
         if (err) throw err;
-
         if (res.length === 0) {
             console.log("-------------------------------------------------------------");
             console.log("");
@@ -95,7 +94,6 @@ function addInv() {
     var sQ;
     connection.query("SELECT product_name FROM products", function (err, res) {
         if (err) throw err;
-
         for (i = 0; i < res.length; i++) {
             products.push(res[i].product_name);
         }
@@ -129,8 +127,6 @@ function addInv() {
                 console.log("*************************************************************************************************");
                 console.log("");
                 console.log("INVENTORY HAS BEEN ADDED! ");
-
-
                 manage();
             })
     })
