@@ -122,7 +122,6 @@ function addInv() {
                 }], function (err) {
                     if (err) throw err;
                 })
-
                 console.log("");
                 console.log("*************************************************************************************************");
                 console.log("");
