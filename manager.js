@@ -91,13 +91,11 @@ function viewLow() {
 function addInv() {
 
     var products = [];
-    var quantity = [];
-    var sQ;
+
     connection.query("SELECT * FROM products", function (err, res) {
         if (err) throw err;
         for (i = 0; i < res.length; i++) {
             products.push(res[i].product_name);
-            quantity.push(res[i].stock_quantity);
         }
 
         inquirer.prompt([{
