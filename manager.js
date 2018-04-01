@@ -91,11 +91,13 @@ function viewLow() {
 function addInv() {
 
     var products = [];
+    var quantity = [];
     var sQ;
-    connection.query("SELECT product_name FROM products", function (err, res) {
+    connection.query("SELECT * FROM products", function (err, res) {
         if (err) throw err;
         for (i = 0; i < res.length; i++) {
             products.push(res[i].product_name);
+            quantity.push(res[i].stock_quantity);
         }
 
         inquirer.prompt([{
@@ -103,7 +105,6 @@ function addInv() {
                 type: "checkbox",
                 message: "Which product would you like to add inventory to?",
                 choices: products
-
             }, {
                 name: "add",
                 type: "input",
@@ -111,11 +112,19 @@ function addInv() {
             }])
             .then(function (answer) {
                 var prod = answer.which.join(" ");
-                console.log(prod);
-                var amt = answer.add;
-                console.log(amt);
+                var prodI = products.indexOf(prod);
+                var amt = parseInt(answer.add);
+                var currQty = parseInt(res[prodI].stock_quantity);
+                var newQty = currQty + amt;
+                // console.log(prod);
+                // console.log(prodI);
+                // console.log(amt);
+                // console.log(currQty);
+                // console.log(currQty + amt);
+                //  console.log(newQty);
+
                 connection.query("UPDATE products SET ? WHERE ?", [{
-                    stock_quantity: +amt
+                    stock_quantity: newQty
                 }, {
                     product_name: prod
 
