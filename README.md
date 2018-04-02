@@ -19,7 +19,7 @@ If the selected quantity is currently in stock, the user's order is fulfilled, d
 
 #### Manager Interace
 
-The manager interface presents a list of four options, show below: 
+The manager interface presents a list of four options: 
 
 	? Please select an option: (Use arrow keys)
 	❯ View Products for Sale 
