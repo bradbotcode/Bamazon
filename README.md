@@ -13,7 +13,9 @@ You can view a demo of the Famazon customer and manager interfaces by clicking t
 
 #### Customer Interface
 
-The customer interface presents a virtual storefront of items. The storefront includes item ID, name, department and price of each item available. The user is prompted to purchase any item by entering the item ID and desired quantity. If the selected quantity is currently in stock, the user's order is fulfilled, displaying the total purchase price and updating the item's quantity in the database.
+The customer interface presents a virtual storefront of items to the user. The storefront includes item ID, name, department and price of each item available. The user is prompted to purchase any item by entering the item ID and desired quantity. 
+
+If the selected quantity is currently in stock, the user's order is fulfilled, displaying the total purchase price and updating the item's quantity in the database.
 
 #### Manager Interace
 
