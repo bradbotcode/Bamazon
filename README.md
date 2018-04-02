@@ -7,8 +7,7 @@ This application showcases a command line storefront using the npm [inquirer](ht
 
 ### Famazon Demo
 
-You can view a demo of the Famazon customer and manager interfaces at the link below. Make sure to download the video, as viewing it in the browswer will display a compressed version, rendering the CLI output illegible.
-
+You can view a demo of the Famazon customer and manager interfaces at the link below:
 [Famazon Demo](https://drive.google.com/open?id=1Wn6nAWv-q3RRqr1W_2iMCZ-RLQxJST5k)
 
 #### Customer Interface
