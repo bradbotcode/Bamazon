@@ -3,7 +3,7 @@ Node.js and MySQL Amazon-like storefront.
 
 ## Description
 
-This application showcases a command line storefront using the npm [inquirer](https://www.npmjs.com/package/inquirer) package, the [CLI-table](https://www.npmjs.com/package/cli-table) package and the [mysql](https://www.npmjs.com/package/mysql) package. The application presents two interfaces: **Customer** and **Manager**.
+This application is a command-line storefront built in Node.js and powered by MySQL. The application presents two interfaces: **Customer** and **Manager**.
 
 ### Famazon Demo
 
