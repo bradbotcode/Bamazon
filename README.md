@@ -1,5 +1,5 @@
 # Famazon
-Node.js and MySQL Amazon-like storefront.
+Node.js and MySQL Command Line Storefront.
 
 ## Description
 
